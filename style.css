@@ -5,8 +5,19 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-black: #080808;
+    --color-white: #f1f1f1;
+    --color-gray-light: #d9d9d9;
+    --color-gray-dark: #7b7b7b;
+}
+
 body {
-    background-color: #f1f1f1;
+    background-color: var(--color-white);
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     height: 100vh;
@@ -17,8 +28,10 @@ body {
 
 /* Header styles */
 header {
-    background-color: #080808;
-    color: #f1f1f1;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: fixed;
+    width: 100%;  
 }
 
 .content-container {
@@ -43,7 +56,7 @@ nav>a {
     text-decoration: none;
     font-weight: 500;
     font-size: 0.8em;
-    color: #f1f1f1;
+    color: var(--color-white);
     margin-right: 30px;
 }
 
@@ -52,7 +65,7 @@ nav>a:last-child {
 }
 
 nav>a:hover {
-    color: #7b7b7b;
+    color: var(--color-gray-dark);
     transition: 0.3s;
     cursor: pointer;
 }
@@ -61,8 +74,6 @@ nav>a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 
@@ -70,12 +81,11 @@ nav>a:hover {
 main {
     display: flex;
     flex-direction: column;
-
+    padding-top: 68px;
 }
 
 main>section>h1 {
-    width: 350px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: left;
     font-size: 2em;
     line-height: 1em;
@@ -85,90 +95,24 @@ main>section>h1 {
 }
 
 main>section>h2 {
-    width: 350px;
-    font-weight: bold;
-    text-align: left;
     font-size: 1.5em;
     line-height: 1em;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-main>section>h3 {
-    width: 350px;
-    font-weight: normal;
-    text-align: left;
-    font-size: 1em;
+.section-titles {
+    font-weight: 400;
+    font-size: 1.1em;
     line-height: 1em;
     margin-bottom: 20px;
 }
 
 .paragraph-text {
-    font-size: 0.9em;
     line-height: 1.2em;
     margin-top: 20px;
 
 }
-
-
-/* My Works styles */
-.group-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 25px;
-}
-
-.card {
-    width: 140px;
-    aspect-ratio: 1 / 1;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-
-}
-
-.card-image {
-    overflow: hidden;
-}
-
-.card-image img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.card-footer {
-    background-color: #d9d9d9;
-    padding-left: 10px;
-    text-align: left;
-    height: 60px;
-    box-sizing: border-box;
-}
-
-.card-footer h3 {
-    font-size: 0.7em;
-    margin-top: 4px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.card-footer p {
-    font-size: 0.5em;
-    margin-left: 0;
-    margin-bottom: 4px;
-    color: #333;
-}
-
-.vermais-container {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-top: 20px;
-}
-
 
 /* Button styles */
 .skills-container {
@@ -197,8 +141,8 @@ button {
 }
 
 .btn {
-    background-color: #d9d9d9;
-    color: #080808;
+    background-color: var(--color-gray-light);
+    color: var(--color-black);
     text-decoration: none;
     border-radius: 20px;
     padding-left: 15px;
@@ -209,8 +153,8 @@ button {
 }
 
 .btn:hover {
-    background-color: #080808;
-    color: #f1f1f1;
+    background-color: var(--color-black);
+    color: var(--color-white);
     transition: 0.3s;
     cursor: pointer;
 }
@@ -222,39 +166,186 @@ button {
 
 .icon-row {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     margin-top: 20px;
-    width: 100px;
-}
-
-.icon-row:hover {
-    cursor: pointer;
+    margin-bottom: 40px;
+    height: 30px;
 }
 
 .skill-icon {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 40px;
+  width: 30px;
+  height: 30px;
+  fill: var(--color-black);
+  transition: 0.3s;
 }
 
 .skill-icon:hover {
-    color: #7b7b7b;
-    transition: 0.3s;
+  fill: var(--color-gray-dark); 
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .arrow-icon {
-    display: block;
     width: 40px;
     height: 40px;
-    margin-left: 5px;
-    margin: 0 auto;
+    margin-bottom: 70px;
+}
 
+/* My Works styles */
+.group-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 182px;
+    aspect-ratio: 1 / 1;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-text {
+    background-color: var(--color-gray-light);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+  
+}
+
+.card-title {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: var(--color-black);
+}
+
+.card-description {
+    font-size: 0.6em;
+    line-height: 1.2em;
+    color: var(--color-black);
+}
+
+.vermais-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+/* Esconde o input de controle */
+.modal-toggle {
+    display: none;
+}
+
+/* Modal - escondido por padrão */
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Quando o input estiver checado, mostra o modal */
+.modal-toggle:checked ~ .modal {
+    display: flex;
+}
+
+/* Conteúdo do modal */
+.modal-card {
+    position: relative;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: var(--color-white);
+    border-radius: 16px;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Overlay - clicar fora fecha */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+}
+
+/* Botão fechar */
+.close-button {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.close-button:hover {
+    background-color: var(--color-gray-dark);
+}
+
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons svg {
+    fill: var(--color-black);
+}
+
+.contact-icons:hover svg {
+    fill: var(--color-gray-dark);
 }
 
 
 /* Footer styles */
 footer {
-    background-color: #080808;
+    background-color: var(--color-black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,6 +354,6 @@ footer {
 }
 
 footer .logo-footer {
-    color: #f1f1f1;
+    color: var(--color-white);
     height: 30px;
 }
