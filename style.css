@@ -30,6 +30,8 @@ body {
 header {
     background-color: var(--color-black);
     color: var(--color-white);
+    position: fixed;
+    width: 100%;  
 }
 
 .content-container {
@@ -79,6 +81,7 @@ nav>a:hover {
 main {
     display: flex;
     flex-direction: column;
+    padding-top: 68px;
 }
 
 main>section>h1 {
@@ -167,22 +170,6 @@ button {
     margin-top: 20px;
     margin-bottom: 40px;
     height: 30px;
-}
-
-.contact-icons {
-    display: flex;
-    gap: 20px;
-    width: 40px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.contact-icons svg {
-    fill: var(--color-black);
-}
-
-.contact-icons:hover svg {
-    fill: var(--color-gray-dark);
 }
 
 .skill-icon {
@@ -315,7 +302,6 @@ button {
 .modal-overlay {
     position: fixed;
     inset: 0;
-    cursor: pointer;
 }
 
 /* Botão fechar */
@@ -339,6 +325,23 @@ button {
 .close-button:hover {
     background-color: var(--color-gray-dark);
 }
+
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons svg {
+    fill: var(--color-black);
+}
+
+.contact-icons:hover svg {
+    fill: var(--color-gray-dark);
+}
+
 
 /* Footer styles */
 footer {
