@@ -194,7 +194,6 @@ button {
 
 .skill-icon:hover {
   fill: var(--color-gray-dark); 
-  cursor: pointer;
 }
 
 .arrow-container {
@@ -207,7 +206,6 @@ button {
     width: 40px;
     height: 40px;
     margin-bottom: 70px;
-    
 }
 
 /* My Works styles */
@@ -271,6 +269,76 @@ button {
     width: 100%;
 }
 
+
+/* Esconde o input de controle */
+.modal-toggle {
+    display: none;
+}
+
+/* Modal - escondido por padrão */
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Quando o input estiver checado, mostra o modal */
+.modal-toggle:checked ~ .modal {
+    display: flex;
+}
+
+/* Conteúdo do modal */
+.modal-card {
+    position: relative;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: var(--color-white);
+    border-radius: 16px;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Overlay - clicar fora fecha */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    cursor: pointer;
+}
+
+/* Botão fechar */
+.close-button {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.close-button:hover {
+    background-color: var(--color-gray-dark);
+}
 
 /* Footer styles */
 footer {
