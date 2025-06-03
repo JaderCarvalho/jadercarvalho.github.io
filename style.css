@@ -12,6 +12,7 @@ html {
 :root {
     --color-black: #080808;
     --color-white: #f1f1f1;
+    --color-grayish-white: #e5e5e5;
     --color-gray-light: #d9d9d9;
     --color-gray-dark: #7b7b7b;
 }
@@ -32,6 +33,7 @@ header {
     color: var(--color-white);
     position: fixed;
     width: 100%;  
+    z-index: 999;
 }
 
 .content-container {
@@ -212,6 +214,8 @@ button {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-grayish-white);
 }
 
 .card:hover {
@@ -256,7 +260,7 @@ button {
     width: 100%;
 }
 
-
+/* Estilos do Modal */
 /* Esconde o input de controle */
 .modal-toggle {
     display: none;
@@ -326,6 +330,8 @@ button {
     background-color: var(--color-gray-dark);
 }
 
+
+/* Icones de contato */
 .contact-icons {
     display: flex;
     gap: 20px;
