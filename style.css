@@ -99,7 +99,7 @@ main>section>h1 {
 main>section>h2 {
     font-size: 1.5em;
     line-height: 1em;
-    margin-top: 30px;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
 
@@ -185,6 +185,21 @@ button {
   fill: var(--color-gray-dark); 
 }
 
+.show-skills-toggle {
+    display: none;
+}
+
+.show-skills {
+    display: none;
+}
+
+.show-skills-toggle:checked ~ .btn + .show-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+
 .arrow-container {
     display: flex;
     justify-content: center;
@@ -201,7 +216,7 @@ button {
 .group-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content:flex-end;
     gap: 24px;
     margin-bottom: 20px;
 }
@@ -254,10 +269,16 @@ button {
     color: var(--color-black);
 }
 
-.vermais-container {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+.show-more-toggle {
+  display: none;
+}
+
+.more-cards {
+  display: none;
+}
+
+.show-more-toggle:checked ~ .btn + .more-cards {
+  display: flex;
 }
 
 /* Estilos do Modal */
