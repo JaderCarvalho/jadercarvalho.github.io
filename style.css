@@ -277,7 +277,7 @@ button {
   display: none;
 }
 
-.show-more-toggle:checked ~ .btn + .more-cards {
+.show-more-toggle:checked ~ .more-cards {
   display: flex;
 }
 
