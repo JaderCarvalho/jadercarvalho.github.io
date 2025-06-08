@@ -12,6 +12,7 @@ html {
 :root {
     --color-black: #080808;
     --color-white: #f1f1f1;
+    --color-grayish-white: #e5e5e5;
     --color-gray-light: #d9d9d9;
     --color-gray-dark: #7b7b7b;
 }
@@ -32,6 +33,7 @@ header {
     color: var(--color-white);
     position: fixed;
     width: 100%;  
+    z-index: 999;
 }
 
 .content-container {
@@ -97,7 +99,7 @@ main>section>h1 {
 main>section>h2 {
     font-size: 1.5em;
     line-height: 1em;
-    margin-top: 30px;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
 
@@ -183,6 +185,21 @@ button {
   fill: var(--color-gray-dark); 
 }
 
+.show-skills-toggle {
+    display: none;
+}
+
+.show-skills {
+    display: none;
+}
+
+.show-skills-toggle:checked ~ .btn + .show-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+
 .arrow-container {
     display: flex;
     justify-content: center;
@@ -199,7 +216,7 @@ button {
 .group-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content:flex-end;
     gap: 24px;
     margin-bottom: 20px;
 }
@@ -212,6 +229,8 @@ button {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-grayish-white);
 }
 
 .card:hover {
@@ -250,13 +269,19 @@ button {
     color: var(--color-black);
 }
 
-.vermais-container {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+.show-more-toggle {
+  display: none;
 }
 
+.more-cards {
+  display: none;
+}
 
+.show-more-toggle:checked ~ .more-cards {
+  display: flex;
+}
+
+/* Estilos do Modal */
 /* Esconde o input de controle */
 .modal-toggle {
     display: none;
@@ -326,6 +351,8 @@ button {
     background-color: var(--color-gray-dark);
 }
 
+
+/* Icones de contato */
 .contact-icons {
     display: flex;
     gap: 20px;

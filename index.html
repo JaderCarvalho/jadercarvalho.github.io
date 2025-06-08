@@ -7,7 +7,7 @@
   <title>Jader Carvalho</title>
   <link rel="shortcut icon" href="icons/Logo_Jah_white-02.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
   </style>
@@ -38,10 +38,11 @@
     <section class="skills-container">
       <div class="skills-row">
         <div class="skill-block">
-          <button href="#" class="btn">
-            <img src="icons/StarBtn.svg" alt="Estrela amarela" class="star-icon">Developer
-          </button>
-          <div class="icon-row">
+          <input type="checkbox" id="show-skills" class="show-skills-toggle">
+          <label for="show-skills" class=" btn"><img src="icons/StarBtn.svg" alt="Icone de estrela"
+              class="star-icon">Developer</label>
+
+          <div class="icon-row show-skills">
             <img src="icons/HTMLIcon-02.svg" alt="HTML Icon" class="skill-icon">
             <img src="icons/CSSIcon-01.svg" alt="CSS Icon" class="skill-icon">
             <img src="icons/JavaIcon-03.svg" alt="JS Icon" class="skill-icon">
@@ -49,10 +50,11 @@
         </div>
 
         <div class="skill-block">
-          <button href="#" class="btn">
-            <img src="icons/StarBtn.svg" alt="Estrela amarela" class="star-icon">Designer
-          </button>
-          <div class="icon-row">
+          <input type="checkbox" id="show-skills2" class="show-skills-toggle">
+          <label for="show-skills2" class=" btn"><img src="icons/StarBtn.svg" alt="Icone de estrela"
+              class="star-icon">Designer</label>
+
+          <div class="icon-row show-skills">
             <img src="icons/Ps_Icon-01.svg" alt=" Ícone Photoshop" class="skill-icon">
             <img src="icons/AiIcon-02.svg" alt=" Ícone Illustrator" class="skill-icon">
             <img src="icons/IdIcon-03.svg" alt=" Ícone InDesign" class="skill-icon">
@@ -77,322 +79,322 @@
       <div class="group-card">
 
         <!-- card Reckitt -->
-      <div class="modal-card">
-        <input type="checkbox" id="modal1" class="modal-toggle">
-        <label for="modal1">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Advertising/Reckitt.jpg" alt="Publicidade feita para Reckitt">
-            </div>
+        <div class="modal-card">
+          <input type="checkbox" id="modal1" class="modal-toggle">
+          <label for="modal1">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/Advertising/Reckitt.jpg" alt="Publicidade feita para Reckitt">
+              </div>
 
-            <div class="card-text">
-              <p class="card-title">Reckitt</p>
-              <p class="card-description">Criação e direção de arte.</p>
+              <div class="card-text">
+                <p class="card-title">Reckitt</p>
+                <p class="card-description">Criação e direção de arte.</p>
+              </div>
             </div>
-          </div>
-        </label>
+          </label>
 
-        <div class="modal">
-          <label for="modal1" class="modal-overlay"></label> <!-- Clique fora para fechar -->
-          <div class="modal-content">
-            <img src="images/Modal/Reckitt.jpg" alt="Imagem ampliada">
-            <label for="modal1" class="close-button">×</label>
+          <div class="modal">
+            <label for="modal1" class="modal-overlay"></label> <!-- Clique fora para fechar -->
+            <div class="modal-content">
+              <img src="images/Modal/Reckitt.jpg" alt="Imagem ampliada">
+              <label for="modal1" class="close-button">×</label>
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- card Salon Line -->
-      <div class="modal-card">
-        <input type="checkbox" id="modal2" class="modal-toggle">
-        <label for="modal2">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Advertising/SalonLine.jpg" alt="Publicidade feita para Salon Line">
-            </div>
+        <div class="modal-card">
+          <input type="checkbox" id="modal2" class="modal-toggle">
+          <label for="modal2">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/Advertising/SalonLine.jpg" alt="Publicidade feita para Salon Line">
+              </div>
 
-            <div class="card-text">
-              <p class="card-title">Salon Line</p>
-              <p class="card-description">Criação e direção de arte.</p>
+              <div class="card-text">
+                <p class="card-title">Salon Line</p>
+                <p class="card-description">Criação e direção de arte.</p>
+              </div>
             </div>
-          </div>
-        </label>
+          </label>
 
-        <div class="modal">
-          <label for="modal2" class="modal-overlay"></label> <!-- Clique fora para fechar -->
-          <div class="modal-content">
-            <img src="images/Modal/Salon_Line.jpg" alt="Imagem ampliada">
-            <label for="modal2" class="close-button">×</label>
+          <div class="modal">
+            <label for="modal2" class="modal-overlay"></label> <!-- Clique fora para fechar -->
+            <div class="modal-content">
+              <img src="images/Modal/Salon_Line.jpg" alt="Imagem ampliada">
+              <label for="modal2" class="close-button">×</label>
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- card Beleza Natural -->
-      <div class="modal-card">
-        <input type="checkbox" id="modal3" class="modal-toggle">
-        <label for="modal3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Advertising/BelezaNatural.jpg" alt="Publicidade feita para Beleza Natural">
-            </div>
+        <div class="modal-card">
+          <input type="checkbox" id="modal3" class="modal-toggle">
+          <label for="modal3">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/Advertising/BelezaNatural.jpg" alt="Publicidade feita para Beleza Natural">
+              </div>
 
-            <div class="card-text">
-              <p class="card-title">Beleza Natural</p>
-              <p class="card-description">Criação e direção de arte.</p>
+              <div class="card-text">
+                <p class="card-title">Beleza Natural</p>
+                <p class="card-description">Criação e direção de arte.</p>
+              </div>
             </div>
-          </div>
-        </label>
+          </label>
 
-        <div class="modal">
-          <label for="modal3" class="modal-overlay"></label> <!-- Clique fora para fechar -->
-          <div class="modal-content">
-            <img src="images/Modal/Beleza_Natural.jpg" alt="Imagem ampliada">
-            <label for="modal3" class="close-button">×</label>
+          <div class="modal">
+            <label for="modal3" class="modal-overlay"></label> <!-- Clique fora para fechar -->
+            <div class="modal-content">
+              <img src="images/Modal/Beleza_Natural.jpg" alt="Imagem ampliada">
+              <label for="modal3" class="close-button">×</label>
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- card Márcia Cosméticos -->
         <div class="modal-card">
-        <input type="checkbox" id="modal4" class="modal-toggle">
-        <label for="modal4">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Advertising/MarciaCosmeticos.jpg" alt="Publicidade feita para Márcia Cosméticos">
-            </div>
-
-            <div class="card-text">
-              <p class="card-title">Márcia Cosméticos</p>
-              <p class="card-description">Criação e direção de arte.</p>
-            </div>
-          </div>
-        </label>
-
-        <div class="modal">
-          <label for="modal4" class="modal-overlay"></label> <!-- Clique fora para fechar -->
-          <div class="modal-content">
-            <img src="images/Modal/Marcia_Cosmeticos.jpg" alt="Imagem ampliada">
-            <label for="modal4" class="close-button">×</label>
-          </div>
-        </div>
-      </div>
-
-        <!-- card Camil -->
-      <div class="modal-card">
-        <input type="checkbox" id="modal5" class="modal-toggle">
-        <label for="modal5">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Advertising/Camil.jpg" alt="Publicidade feita para Camil">
-            </div>
-
-            <div class="card-text">
-              <p class="card-title">Camil Coqueiro</p>
-              <p class="card-description">Criação e direção de arte.</p>
-            </div>
-          </div>
-        </label>
-
-        <div class="modal">
-          <label for="modal5" class="modal-overlay"></label> <!-- Clique fora para fechar -->
-          <div class="modal-content">
-            <img src="images/Modal/Camil_(Coqueiro).jpg" alt="Imagem ampliada">
-            <label for="modal5" class="close-button">×</label>
-          </div>
-        </div>
-      </div>
-      
-      
-        <!-- card Santher -->
-      <div class="modal-card">  
-        <input type="checkbox" id="modal6" class="modal-toggle">
-        <label for="modal6">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Advertising/Santher.jpg" alt="Publicidade feita para Santher">
-            </div>
-
-            <div class="card-text">
-              <p class="card-title">Santher</p>
-              <p class="card-description">Criação e direção de arte.</p>
-            </div>
-          </div>
-        </label>
-
-        <div class="modal">
-          <label for="modal6" class="modal-overlay"></label> <!-- Clique fora para fechar -->
-          <div class="modal-content">
-            <img src="images/Modal/Santher.jpg" alt="Imagem ampliada">
-            <label for="modal6" class="close-button">×</label>
-          </div>
-        </div>
-      </div>
-
-        <!-- card Baby -->
-      <div class="modal-card">
-        <input type="checkbox" id="modal7" class="modal-toggle">
-        <label for="modal7">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Advertising/baby.jpg" alt="Publicidade produtos Baby">
-            </div>
-
-            <div class="card-text">
-              <p class="card-title">Produtos Baby</p>
-              <p class="card-description">Criação e direção de arte.</p>
-            </div>
-          </div>
-        </label>
-
-        <div class="modal">
-          <label for="modal7" class="modal-overlay"></label> <!-- Clique fora para fechar -->
-          <div class="modal-content">
-            <img src="images/Modal/Chupeta_mamadeira.jpg" alt="Imagem ampliada">
-            <label for="modal7" class="close-button">×</label>
-          </div>
-        </div>
-      </div>
-
-        <!-- card Anaconda -->
-      <div class="modal-card">
-        <input type="checkbox" id="modal8" class="modal-toggle">
-        <label for="modal8">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Advertising/Anaconda.jpg" alt="Publicidade feita para Anaconda">
-            </div>
-
-            <div class="card-text">
-              <p class="card-title">Anaconda</p>
-              <p class="card-description">Criação e direção de arte.</p>
-            </div>
-          </div>
-        </label>
-
-        <div class="modal">
-          <label for="modal8" class="modal-overlay"></label> <!-- Clique fora para fechar -->
-          <div class="modal-content">
-            <img src="images/Modal/Anaconda.jpg" alt="Imagem ampliada">
-            <label for="modal8" class="close-button">×</label>
-          </div>
-        </div>
-      </div>
-
-        <div class="vermais-container">
-          <button href="#" class="btn">Ver mais ...</button>
-        </div>
-      </div>
-
-
-
-
-        <!-- Eventos -->
-        <h3 class="section-titles">Design de Exposição e Eventos</h3>
-
-        <div class="group-card">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Events/CBB.png" alt="Desdobramento de arte para o Circuito Banco do Brasil">
-            </div>
-
-            <div class="card-text">
-              <p class="card-title">Circuito BB</p>
-              <p class="card-description">Desdobramento de arte e arte finalização.</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Events/Bravus.png" alt="Desdobramento de arte para Bravus Race">
-            </div>
-
-            <div class="card-text">
-              <p class="card-title">Bravus Race</p>
-              <p class="card-description">Desdobramento de arte e arte finalização.</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Events/MeiaInternacional.png"
-                alt="Desdobramento de arte para Meia Internacional de São Paulo">
-            </div>
-
-            <div class="card-text">
-              <p class="card-title">Meia Maratona SP</p>
-              <p class="card-description">Desdobramento de arte e arte finalização.</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img src="images/Events/TrofeuBrasil.png" alt="Desdobramento de arte para o evento Troféu Brasil">
-            </div>
-
-            <div class="card-text">
-              <p class="card-title">Troféu Brasil</p>
-              <p class="card-description">Desdobramento de arte e arte finalização.</p>
-            </div>
-          </div>
-
-          <div class="vermais-container">
-            <button href="#" class="btn">Ver mais ...</button>
-          </div>
-
-          <!-- Front-end -->
-          <h3 class="section-titles">front-end</h3>
-
-          <div class="group-card">
-
+          <input type="checkbox" id="modal4" class="modal-toggle">
+          <label for="modal4">
             <div class="card">
               <div class="card-image">
-                <img src="images/Sites/Site1.png" alt="Site">
+                <img src="images/Advertising/MarciaCosmeticos.jpg" alt="Publicidade feita para Márcia Cosméticos">
               </div>
 
               <div class="card-text">
-                <p class="card-title">Site</p>
-                <p class="card-description">HTML, CSS e Java Script.</p>
+                <p class="card-title">Márcia Cosméticos</p>
+                <p class="card-description">Criação e direção de arte.</p>
               </div>
             </div>
+          </label>
 
-            <div class="card">
-              <div class="card-image">
-                <img src="images/Sites/Site1.png" alt="Site">
-              </div>
-
-              <div class="card-text">
-                <p class="card-title">Site</p>
-                <p class="card-description">HTML, CSS e Java Script.</p>
-              </div>
+          <div class="modal">
+            <label for="modal4" class="modal-overlay"></label> <!-- Clique fora para fechar -->
+            <div class="modal-content">
+              <img src="images/Modal/Marcia_Cosmeticos.jpg" alt="Imagem ampliada">
+              <label for="modal4" class="close-button">×</label>
             </div>
-
-            <div class="card">
-              <div class="card-image">
-                <!-- <img src="images/Sites/Site1.png" alt="Site"> -->
-              </div>
-
-              <div class="card-text">
-                <p class="card-title">Site</p>
-                <p class="card-description">HTML, CSS e Java Script.</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-image">
-                <img src="images/Sites/Site1.png" alt="Site">
-              </div>
-
-              <div class="card-text">
-                <p class="card-title">Site</p>
-                <p class="card-description">HTML, CSS e Java Script.</p>
-              </div>
-            </div>
-
-            <div class="vermais-container">
-              <button href="#" class="btn">Ver mais ...</button>
-            </div>
-
           </div>
         </div>
+
+        
+        <input type="checkbox" id="show-more-cards" class=" show-more-toggle">
+        <div class="group-card more-cards">
+
+          <!-- card Camil -->
+          <div class="modal-card">
+            <input type="checkbox" id="modal5" class="modal-toggle">
+            <label for="modal5">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/Advertising/Camil.jpg" alt="Publicidade feita para Camil">
+                </div>
+
+                <div class="card-text">
+                  <p class="card-title">Camil Coqueiro</p>
+                  <p class="card-description">Criação e direção de arte.</p>
+                </div>
+              </div>
+            </label>
+
+            <div class="modal">
+              <label for="modal5" class="modal-overlay"></label> <!-- Clique fora para fechar -->
+              <div class="modal-content">
+                <img src="images/Modal/Camil_(Coqueiro).jpg" alt="Imagem ampliada">
+                <label for="modal5" class="close-button">×</label>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- card Santher -->
+          <div class="modal-card">
+            <input type="checkbox" id="modal6" class="modal-toggle">
+            <label for="modal6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/Advertising/Santher.jpg" alt="Publicidade feita para Santher">
+                </div>
+
+                <div class="card-text">
+                  <p class="card-title">Santher</p>
+                  <p class="card-description">Criação e direção de arte.</p>
+                </div>
+              </div>
+            </label>
+
+            <div class="modal">
+              <label for="modal6" class="modal-overlay"></label> <!-- Clique fora para fechar -->
+              <div class="modal-content">
+                <img src="images/Modal/Santher.jpg" alt="Imagem ampliada">
+                <label for="modal6" class="close-button">×</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- card Baby -->
+          <div class="modal-card">
+            <input type="checkbox" id="modal7" class="modal-toggle">
+            <label for="modal7">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/Advertising/baby.jpg" alt="Publicidade produtos Baby">
+                </div>
+
+                <div class="card-text">
+                  <p class="card-title">Produtos Baby</p>
+                  <p class="card-description">Criação e direção de arte.</p>
+                </div>
+              </div>
+            </label>
+
+            <div class="modal">
+              <label for="modal7" class="modal-overlay"></label> <!-- Clique fora para fechar -->
+              <div class="modal-content">
+                <img src="images/Modal/Chupeta_mamadeira.jpg" alt="Imagem ampliada">
+                <label for="modal7" class="close-button">×</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- card Anaconda -->
+          <div class="modal-card">
+            <input type="checkbox" id="modal8" class="modal-toggle">
+            <label for="modal8">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/Advertising/Anaconda.jpg" alt="Publicidade feita para Anaconda">
+                </div>
+
+                <div class="card-text">
+                  <p class="card-title">Anaconda</p>
+                  <p class="card-description">Criação e direção de arte.</p>
+                </div>
+              </div>
+            </label>
+
+            <div class="modal">
+              <label for="modal8" class="modal-overlay"></label> <!-- Clique fora para fechar -->
+              <div class="modal-content">
+                <img src="images/Modal/Anaconda.jpg" alt="Imagem ampliada">
+                <label for="modal8" class="close-button">×</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <label for="show-more-cards" class="btn">ver mais ...</label>
+      </div>
+
+
+
+      <!-- Eventos -->
+      <h3 class="section-titles">Design de Exposição e Eventos</h3>
+
+      <div class="group-card">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/Events/CBB.png" alt="Desdobramento de arte para o Circuito Banco do Brasil">
+          </div>
+
+          <div class="card-text">
+            <p class="card-title">Circuito BB</p>
+            <p class="card-description">Desdobramento de arte e arte finalização.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/Events/Bravus.png" alt="Desdobramento de arte para Bravus Race">
+          </div>
+
+          <div class="card-text">
+            <p class="card-title">Bravus Race</p>
+            <p class="card-description">Desdobramento de arte e arte finalização.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/Events/MeiaInternacional.png"
+              alt="Desdobramento de arte para Meia Internacional de São Paulo">
+          </div>
+
+          <div class="card-text">
+            <p class="card-title">Meia Maratona SP</p>
+            <p class="card-description">Desdobramento de arte e arte finalização.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/Events/TrofeuBrasil.png" alt="Desdobramento de arte para o evento Troféu Brasil">
+          </div>
+
+          <div class="card-text">
+            <p class="card-title">Troféu Brasil</p>
+            <p class="card-description">Desdobramento de arte e arte finalização.</p>
+          </div>
+        </div>
+        <input type="checkbox" id="show-more-cards2" class=" show-more-toggle">
+        <label for="show-more-cards2" class="btn">ver mais ...</label>
+      </div>
+
+
+      <!-- Front-end -->
+      <h3 class="section-titles">front-end</h3>
+
+      <div class="group-card">
+
+        <div class="card">
+          <div class="card-image">
+            <!-- <img src="images/Sites/Site1.png" alt="Site"> -->
+          </div>
+
+          <div class="card-text">
+            <p class="card-title">Site</p>
+            <p class="card-description">HTML, CSS e Java Script.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <!-- <img src="images/Sites/Site1.png" alt="Site"> -->
+          </div>
+
+          <div class="card-text">
+            <p class="card-title">Site</p>
+            <p class="card-description">HTML, CSS e Java Script.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <!-- <img src="images/Sites/Site1.png" alt="Site"> -->
+          </div>
+
+          <div class="card-text">
+            <p class="card-title">Site</p>
+            <p class="card-description">HTML, CSS e Java Script.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <!-- <img src="images/Sites/Site1.png" alt="Site"> -->
+          </div>
+
+          <div class="card-text">
+            <p class="card-title">Site</p>
+            <p class="card-description">HTML, CSS e Java Script.</p>
+          </div>
+        </div>
+
+        <input type="checkbox" id="show-more-cards3" class=" show-more-toggle">
+        <label for="show-more-cards3" class="btn">ver mais ...</label>
+
+      </div>
+      </div>
     </section>
 
     <section id="contact">
