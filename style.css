@@ -190,13 +190,21 @@ button {
 }
 
 .show-skills {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.4s cubic-bezier(.4,0,.2,1);
 }
 
 .show-skills-toggle:checked ~ .btn + .show-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    max-height: 100px; 
+    opacity: 1;
 }
 
 
@@ -275,6 +283,26 @@ button {
 
 .more-cards {
   display: none;
+}
+
+.more-cards .group-card {
+  margin-bottom: 0;
+}
+.toggle-button {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.show-less-text {
+  display: none;
+}
+
+#show-more-cards:checked ~ .toggle-button .show-more-text {
+  display: none;
+}
+
+#show-more-cards:checked ~ .toggle-button .show-less-text {
+  display: inline;
 }
 
 .show-more-toggle:checked ~ .more-cards {
@@ -358,11 +386,12 @@ button {
     gap: 20px;
     width: 40px;
     cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
 .contact-icons svg {
     fill: var(--color-black);
+    transition: fill 0.3s ease;
+
 }
 
 .contact-icons:hover svg {
