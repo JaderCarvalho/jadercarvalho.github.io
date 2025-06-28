@@ -41,6 +41,7 @@ header {
     margin: 0 auto;
 }
 
+
 header>section {
     display: flex;
     justify-content: space-between;
@@ -138,6 +139,7 @@ main>section>h2 {
     /* espaço entre os blocos */
 }
 
+
 button {
     border: none;
 }
@@ -174,6 +176,7 @@ button {
     height: 30px;
 }
 
+
 .skill-icon {
   width: 30px;
   height: 30px;
@@ -192,7 +195,6 @@ button {
 .show-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -202,7 +204,6 @@ button {
 .show-skills-toggle:checked ~ .btn + .show-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
     max-height: 100px; 
     opacity: 1;
 }
