@@ -37,7 +37,31 @@
     .btn {
         align-self: flex-start;
     }
-    
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: var(--color-black);
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        gap: 10px;
+    }
+
+    .menu a {
+        margin: 0;
+        font-size: 0.9em;
+    }
+
+    .menu-toggle:checked+.hamburger+.menu {
+        display: flex;
+    }
 }
 
 
@@ -60,7 +84,7 @@
     body {
         font-size: 13px;
     }
-    
+
     .skills-row {
         gap: 24px;
     }
@@ -73,6 +97,5 @@
         width: 104px;
     }
 
-    
-}
 
+}
