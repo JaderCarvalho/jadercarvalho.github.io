@@ -32,7 +32,7 @@ header {
     background-color: var(--color-black);
     color: var(--color-white);
     position: fixed;
-    width: 100%;  
+    width: 100%;
     z-index: 999;
 }
 
@@ -78,6 +78,28 @@ nav>a:hover {
     justify-content: space-between;
     align-items: center;
 }
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger span {
+    background-color: var(--color-white);
+    height: 3px;
+    width: 100%;
+    display: block;
+}
+
 
 
 /* Main content styles */
@@ -178,14 +200,14 @@ button {
 
 
 .skill-icon {
-  width: 30px;
-  height: 30px;
-  fill: var(--color-black);
-  transition: 0.3s;
+    width: 30px;
+    height: 30px;
+    fill: var(--color-black);
+    transition: 0.3s;
 }
 
 .skill-icon:hover {
-  fill: var(--color-gray-dark); 
+    fill: var(--color-gray-dark);
 }
 
 .show-skills-toggle {
@@ -198,13 +220,13 @@ button {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.4s cubic-bezier(.4,0,.2,1);
+    transition: max-height 0.4s cubic-bezier(.4, 0, .2, 1), opacity 0.4s cubic-bezier(.4, 0, .2, 1);
 }
 
-.show-skills-toggle:checked ~ .btn + .show-skills {
+.show-skills-toggle:checked~.btn+.show-skills {
     display: flex;
     flex-wrap: wrap;
-    max-height: 100px; 
+    max-height: 100px;
     opacity: 1;
 }
 
@@ -225,7 +247,7 @@ button {
 .group-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-end;
+    justify-content: flex-end;
     gap: 24px;
     margin-bottom: 20px;
 }
@@ -263,7 +285,7 @@ button {
     padding-right: 10px;
     padding-top: 4px;
     padding-bottom: 6px;
-  
+
 }
 
 .card-title {
@@ -279,35 +301,36 @@ button {
 }
 
 .show-more-toggle {
-  display: none;
+    display: none;
 }
 
 .more-cards {
-  display: none;
+    display: none;
 }
 
 .more-cards .group-card {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
+
 .toggle-button {
-  cursor: pointer;
-  display: inline-block;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .show-less-text {
-  display: none;
+    display: none;
 }
 
-#show-more-cards:checked ~ .toggle-button .show-more-text {
-  display: none;
+#show-more-cards:checked~.toggle-button .show-more-text {
+    display: none;
 }
 
-#show-more-cards:checked ~ .toggle-button .show-less-text {
-  display: inline;
+#show-more-cards:checked~.toggle-button .show-less-text {
+    display: inline;
 }
 
-.show-more-toggle:checked ~ .more-cards {
-  display: flex;
+.show-more-toggle:checked~.more-cards {
+    display: flex;
 }
 
 /* Estilos do Modal */
@@ -320,7 +343,7 @@ button {
 .modal {
     position: fixed;
     inset: 0;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     display: none;
     justify-content: center;
     align-items: center;
@@ -328,7 +351,7 @@ button {
 }
 
 /* Quando o input estiver checado, mostra o modal */
-.modal-toggle:checked ~ .modal {
+.modal-toggle:checked~.modal {
     display: flex;
 }
 
@@ -373,7 +396,7 @@ button {
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .close-button:hover {
