@@ -34,7 +34,7 @@ header {
     position: fixed;
     width: 100%;
     height: 70px;
-    z-index: 1000;
+    z-index: 900;
 }
 
 .content-container {
@@ -86,7 +86,7 @@ nav>a:hover {
     gap: 20px;
     align-items: center;
     padding-top: 30px;
-    z-index: 1200;
+    z-index: 950;
 }
 
 .menu-toggle {
@@ -100,7 +100,7 @@ nav>a:hover {
     gap: 5px;
     cursor: pointer;
     width: 30px;
-    z-index: 1300;
+    z-index: 975;
 }
 
 .hamburger span {
@@ -116,11 +116,10 @@ nav>a:hover {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     right: 0;
     transition: opacity 0.3s ease;
-    z-index: 1100;
+    z-index: 925;
 }
 
 
@@ -401,6 +400,7 @@ button {
 .modal-overlay {
     position: fixed;
     inset: 0;
+    z-index: 1000;
 }
 
 /* Botão fechar */
