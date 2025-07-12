@@ -44,23 +44,32 @@
 
     .menu {
         display: none;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: var(--color-black);
-        flex-direction: column;
-        padding: 10px;
-        border-radius: 10px;
-        gap: 10px;
     }
 
-    .menu a {
+    .menu-mobile {
+        display: flex;
+        position: fixed;
+        top: 60px;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: var(--color-black);
+        transition: right 0.3s ease;
+    }
+
+    .menu-mobile a {
         margin: 0;
         font-size: 0.9em;
+    
     }
 
-    .menu-toggle:checked+.hamburger+.menu {
-        display: flex;
+    .menu-toggle:checked+.hamburger+.menu+.menu-mobile {
+        right: 0;
+    }
+
+    .menu-toggle:checked~.overlay {
+        display: block;
+        opacity: 1;
     }
 }
 

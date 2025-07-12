@@ -33,7 +33,8 @@ header {
     color: var(--color-white);
     position: fixed;
     width: 100%;
-    z-index: 999;
+    height: 70px;
+    z-index: 1000;
 }
 
 .content-container {
@@ -79,6 +80,15 @@ nav>a:hover {
     align-items: center;
 }
 
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 30px;
+    z-index: 1200;
+}
+
 .menu-toggle {
     display: none;
 }
@@ -90,16 +100,28 @@ nav>a:hover {
     gap: 5px;
     cursor: pointer;
     width: 30px;
-    height: 30px;
+    z-index: 1300;
 }
 
 .hamburger span {
     background-color: var(--color-white);
     height: 3px;
-    width: 100%;
+    width: 30px;
     display: block;
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1100;
+}
 
 
 /* Main content styles */
@@ -347,7 +369,7 @@ button {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 1100;
 }
 
 /* Quando o input estiver checado, mostra o modal */
